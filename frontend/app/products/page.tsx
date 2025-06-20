@@ -46,10 +46,12 @@ export default function ProductsPage() {
       const response = await fetch('/api/products');
       const data = await response.json();
       
-      if (data.success) {
-        const allCategories = Array.from(new Set(data.data.map((p: Product) => p.category)));
-        setCategories(['All', ...allCategories.sort()]);
-      }
+       if (data.success) {
+      const allCategories = Array.from(
+        new Set(data.data.map((p: Product) => String(p.category)))
+      ) as string[];
+      setCategories(['All', ...allCategories.sort()]);
+    }
     } catch (error) {
       console.error('Failed to fetch categories');
     }
