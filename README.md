@@ -14,7 +14,7 @@ A luxury jewelry e-commerce website built with Next.js, featuring an elegant des
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd lumiere-jewelry
+cd geer-intern-assignment/frontend
 ```
 
 2. Install dependencies:
@@ -79,35 +79,37 @@ yarn start
 ## 📁 Project Structure
 
 ```
-lumiere-jewelry/
-├── app/                          # Next.js App Router pages
-│   ├── about/                    # About us page
-│   ├── api/                      # API routes
-│   │   └── products/             # Product API endpoints
-│   ├── care-instructions/        # Jewelry care guide
-│   ├── cart/                     # Shopping cart page
-│   ├── contact/                  # Contact form page
-│   ├── products/                 # Product listing and details
-│   ├── returns/                  # Return policy page
-│   ├── size-guide/               # Sizing guide page
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx                # Root layout component
-│   └── page.tsx                  # Homepage
-├── components/                   # Reusable React components
-│   ├── products/                 # Product-specific components
-│   │   ├── product-card.tsx      # Individual product card
-│   │   ├── product-grid.tsx      # Product grid layout
-│   │   └── product-search.tsx    # Search and filter component
-│   └── ui/                       # shadcn/ui components
-├── hooks/                        # Custom React hooks
-│   └── use-cart.ts               # Shopping cart hook
-├── lib/                          # Utility functions and data
-│   ├── cart-store.ts             # Cart state management
-│   ├── products-data.ts          # Mock product data
-│   └── utils.ts                  # Utility functions
-├── types/                        # TypeScript type definitions
-│   └── product.ts                # Product interface
-└── public/                       # Static assets
+geer-intern-assignment/
+├── frontend/   
+│   ├── app/                          # Next.js App Router pages
+│   │   ├── about/                    # About us page
+│   │   ├── api/                      # API routes
+│   │   │   └── products/             # Product API endpoints
+│   │   ├── care-instructions/        # Jewelry care guide
+│   │   ├── cart/                     # Shopping cart page
+│   │   ├── contact/                  # Contact form page
+│   │   ├── products/                 # Product listing and details
+│   │   ├── returns/                  # Return policy page
+│   │   ├── size-guide/               # Sizing guide page
+│   │   ├── globals.css               # Global styles
+│   │   ├── layout.tsx                # Root layout component
+│   │   └── page.tsx                  # Homepage
+│   ├── components/                   # Reusable React components
+│   │   ├── products/                 # Product-specific components
+│   │   │   ├── product-card.tsx      # Individual product card
+│   │   │   ├── product-grid.tsx      # Product grid layout
+│   │   │   └── product-search.tsx    # Search and filter component
+│   │   └── ui/                       # shadcn/ui components
+│   ├── hooks/                        # Custom React hooks
+│   │   └── use-cart.ts               # Shopping cart hook
+│   ├── lib/                          # Utility functions and data
+│   │   ├── cart-store.ts             # Cart state management
+│   │   ├── products-data.ts          # Mock product data
+│   │   └── utils.ts                  # Utility functions
+│   ├── types/                        # TypeScript type definitions
+│   │   └── product.ts                # Product interface
+│   └── public/                       # Static assets           
+└─── readme.md
 ```
 
 ## 🎨 Design System
